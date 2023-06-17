@@ -1,7 +1,12 @@
+import 'dart:io';
+
 void main() {
-  int numeros = 0;
-  while (numeros != 10) {
-    print("meu numero é: $numeros");
-    numeros++;
-  }
+  print("Digite o numero:");
+  String numeros = stdin.readLineSync()!;
+  print(numeros.runtimeType);
+  print("meu numero é: $numeros");
+  int texto = int.parse(numeros);
+  print(texto.runtimeType);
+  final String real = "Novo";
+  print(real);
 }
